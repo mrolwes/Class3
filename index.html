@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.1.4/math.min.js"></script>
+  
+  </head> 
+<body>
+
+  <h1>Assignment 1: Number Form</h1>
+  <h2>Enter your numbers here:</h2>  
+  <input type="number" id="myNumber">
+  
+  <!-- sum of numbers -->
+
+  <p>Click the button to get the sum of the number field.</p>
+
+  <button onclick="mySum()">Sum</button>
+
+  <p id="sumOf"></p>
+  
+  <!-- median of numbers -->
+  
+  <p>Click the button to get the median of the number field.</p>
+  
+  <button onclick="myMedian()">Median</button>
+  
+  <p id="medianOf"></p>
+  
+ <!-- counting numbers -->
+  
+  <p>Click on the button to get a total count of the number field.</p>
+  
+  <button onclick="myCount()">Count</button>
+  
+  <p id="countOf"></p>
+  
+<script>
+function mySum() {
+    var x = document.getElementById("myNumber").value;
+    document.getElementById("sumOf").innerHTML = x;
+}
+  
+  function myMedian() {
+    var x = document.getElementById("myNumber").value;
+    document.getElementById("medianOf").innerHTML = x;
+}
+  
+  function myCount() {
+    var x = document.getElementById("myNumber").value;
+    document.getElementById("countOf").innerHTML = x;
+}
+</script>
